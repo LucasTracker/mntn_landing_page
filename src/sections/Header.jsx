@@ -5,8 +5,8 @@ const Header = () => {
         <div className="relative max-xl:mb-16 max-2xl:mb-30">
             <div className="absolute w-full">
                 <img src="/images/HG.png" alt="hg" className="relative max-md:-mt-5 w-full max-2xl:py-0 h-full object-cover"/>
-                <img src="/images/MG.png"  alt="MG" className="relative max-sm:-mt-20 max-md:-mt-40 max-lg:-mt-35 max-2xl:-mt-50 w-full h-full object-cover"/>
-                <img src="/images/VG.png" alt="vg" className="relative max-sm:-mt-62 max-md:-mt-90 max-lg:-mt-105 max-2xl:-mt-210 w-full object-cover "/>
+                <img src="/images/MG.png"  alt="MG" className="relative -mt-150 max-sm:-mt-20 max-md:-mt-40 max-lg:-mt-35 max-2xl:-mt-50 w-full h-full object-cover"/>
+                <img src="/images/VG.png" alt="vg" className="relative -mt-300 max-sm:-mt-62 max-md:-mt-90 max-lg:-mt-105 max-2xl:-mt-210 w-full object-cover "/>
                 <div className="absolute  inset-0 bg-gradient-to-br from-[#0B1D26]/80 to-[#000000]/80 opacity-40" />
                 <div className="absolute max-sm:-mt-15 max-lg:-mt-15 max-xl:-mt-12 max-2xl:-mt-25 w-full h-[680px] -mt-80 bg-gradient-to-b from-black  via-black opacity-90 blur-md to-[#0B1D26] "/>
             </div>
