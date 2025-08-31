@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --bg-html: #0B1D26;
+    --color-text: #FBD784;
+    --font-sans: 'Poppins', sans-serif;
+    --font-chronicle: 'Chronicle Display', serif;
+    --font-chronicle-black: 'Chronicle Display Black', serif;
+    --font-gilroy: 'Gilroy', sans-serif;
+}
+
+
+@utility bg-html {
+    background-color: var(--bg-html);
+}
+@layer base {
+    html {
+        @apply bg-html;
+    }
+
+}
+
+@layer utilities {
+    .line-left::before {
+        content: "";
+        @apply inline-block w-[72px] max-md:w-[54px] h-[2px] bg-yellow-200 mr-3 align-middle;
+    }
+
+    .h1 {
+        @apply font-chronicle font-semibold text-[88px] max-md:text-6xl;
+    }
+
+    .h2 {
+        @apply font-chronicle-black font-extrabold text-[18px] max-md:text-[14px] text-(--color-text) tracking-[6px] max-md:tracking-wider uppercase;
+    }
+}
+
+@layer components {
+    .slider {
+        @apply relative appearance-none w-[240px] h-2 bg-transparent transform rotate-90;
+
+        /* parte cinza (fundo) */
+        &::before {
+            content: "";
+            @apply absolute left-0 top-1/2 -translate-y-1/2 h-2 w-full bg-gray-500;
+        }
+
+        /* parte branca (preenchida) */
+        &::after {
+            content: "";
+            @apply absolute left-0 top-1/2 -translate-y-1/2 h-2  bg-white rounded-sm;
+            width: 40%;
+        }
+
+    }
+}
+/* Chronicle Display Roman */
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('/fonts/Chronicle Display Roman.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Chronicle Display Semibold */
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('/fonts/Chronicle Display Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Chronicle Display Black */
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('/fonts/Chronicle Display Black.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Chronicle Display Light Italic */
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('/fonts/Chronicle Display Light Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Bold.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
