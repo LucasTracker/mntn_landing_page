@@ -138,10 +138,10 @@ const Hero = () => {
                 </div>
             </div>
             <div className="max-xl:mb-2 mb-0">
-                <div className="relative max-sm:p-5 flex max-xl:flex-col flex-col text-white max-xl:gap-7 gap-12 max-xl:mb-15 -mt-50">
+                <div className="relative max-sm:p-5 flex max-xl:flex-col flex-col text-white max-xl:gap-7 gap-12 max-xl:mb-15 max-xl:-mt-2 -mt-50">
 
                     <h2 className="text-white font-gilroy font-extrabold max-2xl:text-7xl text-9xl opacity-25">03</h2>
-                    <div className="flex flex-row gap-4 absolute max-sm:mt-5 max-2xl:mt-4 mt-10 ml-12 items-center align-middle max-sm:ml-7">
+                    <div className="flex flex-row gap-4 absolute max-sm:mt-0 max-2xl:mt-4  mt-10 ml-12 items-center align-middle max-sm:ml-7">
                         <div  className="line-left max-sm:-mt-2 max-lg:-mt-1 max-2xl:ml-3 -mt-1.5"/>
                         <h2 className="uppercase tracking-widest font-gilroy font-extrabold text-amber-200 max-2xl:text-2xl text-3xl">where you go is the key</h2>
                     </div>
